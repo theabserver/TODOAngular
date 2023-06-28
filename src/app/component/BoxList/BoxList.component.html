@@ -1,0 +1,4 @@
+<div><input #newNote type="text"><button (click)="addNote(newNote)">Add Note</button></div>
+<div class="flex mtop-10">
+  <app-Box *ngFor="let note of notes"  class="box pad col-3" [note]="note" (deleteNote)="deleteNote($event)" (updateNote)="callUpdateNote($event)" (toggleNote)="toggleNoteStatus($event)" [ngClass]="note.editable == true ? 'editable' : 'readonly'"></app-Box>
+</div>

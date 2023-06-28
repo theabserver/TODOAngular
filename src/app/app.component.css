@@ -1,0 +1,26 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+
+.content {
+  display: flex;
+  margin: 5% auto 5% auto;
+  padding: 0 16px;
+  flex-direction: row;
+  align-items: center;
+}

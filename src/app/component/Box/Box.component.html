@@ -1,0 +1,11 @@
+<div>
+  <p data-id="{note.id}">
+    {{note.text}}
+  </p>
+  <p>Editable: {{note.editable}}</p>
+  <button (click)="onDelete(note.id)">Delete</button>
+  <button (click)="onToggle(note.id)">Toggle Edit</button>
+  <div *ngIf="note.editable">
+    <p><input #editNote type="text"><button (click)="callUpdateNote(note.id, editNote)">Add Note</button></p>
+  </div>
+</div>
